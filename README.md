@@ -18,13 +18,21 @@ When I am asked to solve a maze, given a maze, the recursive abstraction can sol
 <pre>
 <code>
 Explorer starts on a point
+
 Check base cases
->>If on treaure, return true
->>If maze isn't navigable, return false
+
+  If on treaure, return true
+  
+  If maze isn't navigable, return false
+  
 For every legal neighbor of explorer
->>Replace original stepping stone with a wall
->>Invoke recursive absraction 
->>Recover original stepping stone
+
+  Replace original stepping stone with a wall
+
+  Invoke recursive absraction 
+  
+  Recover original stepping stone
+
 Return False
 </code>
 </pre>
