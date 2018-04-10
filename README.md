@@ -26,7 +26,8 @@ For every legal neighbor of explorer
 >>Invoke recursive absraction 
 >>Recover original stepping stone
 Return False
-
+</code>
+</pre>
 
 ## class(es) with fields and methods
 
