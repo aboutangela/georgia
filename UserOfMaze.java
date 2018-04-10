@@ -22,14 +22,14 @@ public class UserOfMaze {
                             );
         System.out.println( maze + System.lineSeparator());
 
-        moveTest( maze);
-        dropTest( maze);
+        // moveTest( maze);
+        // dropTest( maze);
 
-        copyConstructTest( maze);
+        // copyConstructTest( maze);
 
         // // test Displayer
-         displayer = new Displayer( Integer.parseInt( commandLine[3]));
-        displayerTest( maze);
+        // displayer = new Displayer( Integer.parseInt( commandLine[3]));
+        // displayerTest( maze);
 
          snapshotDemo( maze);
     }
@@ -155,8 +155,9 @@ public class UserOfMaze {
     private static void snapshotDemo( Maze candidate) {
 
         Maze snapshot;
-
         snapshot = new Maze(candidate);
+
+	candidate.go(Maze.EAST);
          System.out.println(
                              "modified candidate with no explorer"
                           + System.lineSeparator()
