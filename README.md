@@ -7,7 +7,7 @@ Grace Feeley, Angela Li
 Return the boolean value of the statement "the maze is navigable, having a legal travel path that is continuous from start point to existing treasure."
 
 ## recursive abstraction
-When I am asked to solve a maze, given a maze, the recursive abstraction can solve a maze with one fewer stepping stone by making the next legal move.
+When I am asked to solve a maze, given a maze, the recursive abstraction can solve a maze with one fewer stepping stones by making the next legal move.
 
 
 ## base case
