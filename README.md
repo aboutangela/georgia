@@ -42,3 +42,5 @@ Return False
 ## class(es) with fields and methods
 
 ## version*n* wishlist 
+
+## known bugs
