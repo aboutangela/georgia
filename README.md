@@ -23,7 +23,9 @@ Check base cases
 
   If on treaure, return true
   
-  If maze isn't navigable, return false
+  If on wall, return false
+  
+  Else, on stepping stone
   
 For every legal neighbor of explorer
 
