@@ -11,8 +11,8 @@ When I am asked to solve a maze, given a maze, the recursive abstraction can sol
 
 
 ## base case
->When the explorer finds the treasure in the maze (the boolean statement is true)
->If the maze isn't navigable (the boolean statement is false)
+>If on treasure, return true
+>If on wall, return false
 
 ## english or pseudocode of the algorithm
 <pre>
@@ -21,18 +21,18 @@ Explorer starts on a point
 
 Check base cases
 
-  If on treaure, return true
-  
+  If on treasure, return true
+
   If on wall, return false
-  
+
   Else, on stepping stone
-  
+
 For every legal neighbor of explorer
 
   Replace original stepping stone with a wall
 
-  Invoke recursive absraction 
-  
+  Invoke recursive abstraction
+
   Recover original stepping stone
 
 Return False
@@ -41,6 +41,6 @@ Return False
 
 ## class(es) with fields and methods
 
-## version*n* wishlist 
+## version*n* wishlist
 
 ## known bugs
