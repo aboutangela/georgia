@@ -40,7 +40,21 @@ Return False
 </pre>
 
 ## class(es) with fields and methods
+<pre>
+<code>
+public class MazeSolver(){
+Maze inProgress;
+public MazeSolver(String sourcefilename, int explorerRank, int explorerFile);
+private boolean solveMaze();
+}
+</code>
+</pre>
+
+
 
 ## version*n* wishlist
 
 ## known bugs
+>Cannot find treasure
+>Do not know if the method works because it cannot find the treasure
+
