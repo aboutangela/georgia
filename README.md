@@ -55,6 +55,6 @@ private boolean solveMaze();
 ## version*n* wishlist
 
 ## known bugs
->Cannot find treasure
->Do not know if the method works because it cannot find the treasure
-
+>Cannot navigate a non-only tresure map
+>Cannot record all solutions
+>Displayer not utilized yet
