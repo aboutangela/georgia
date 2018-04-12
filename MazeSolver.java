@@ -8,26 +8,25 @@
 
 
 public class MazeSolver {
-     ArrayList< Maze> solutions;
-     Maze inProgress;
+     //ArrayList< Maze> solutions;
+     //Maze inProgress;
 
-    public MazeSolver(String sourcefilename, int explorerRank, int explorerFile) {
-            
-        inProgress = new Maze(String sourcefilename, int explorerRank, int explorerFile);
-        solveMaze(); 
+    public MazeSolver( Maze maze) {                    
+        // this.displayer = displayer;
     }
 
-public boolean solveMaze() {
+public boolean solveMaze( Maze maze) {
      //Explorer starts on a point
 
      //Check base cases
-    if (inProgress.explorerIsOnA().equals("WALL");
+    if (maze.explorerIsOnA() == maze.WALL)
 	return false;
 
 	//If on treasure, return true -- don't know how to do yet
-
+    else if( maze.explorerIsOnA() == maze.TREASURE)
+	return true;
   
-
+/**
 	//Else, on stepping stone
 
 	//For every legal neighbor of explorer
@@ -51,8 +50,7 @@ public boolean solveMaze() {
 
 	    backUp.dropA(2);
 	}
-	
-	    
+*/	
 	return false;
 	
     }

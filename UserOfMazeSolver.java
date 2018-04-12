@@ -17,4 +17,11 @@ public class UserOfMazeSolver {
                           );
       System.out.println( maze + System.lineSeparator());
 
+      //displayer = new Displayer( Integer.parseInt( commandLine[3]));
+
+      MazeSolver solver = new MazeSolver(maze);
+
+      System.out.println(solver.solveMaze(maze));
+      
+  }
 }
