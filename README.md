@@ -40,21 +40,13 @@ Return False
 </pre>
 
 ## class(es) with fields and methods
-<pre>
-<code>
-public class MazeSolver(){
-Maze inProgress;
-public MazeSolver(String sourcefilename, int explorerRank, int explorerFile);
-private boolean solveMaze();
-}
-</code>
-</pre>
-
-
+Maze
+MazeSolver
+UserOfMaze
+UserOfMazeSolver
 
 ## version*n* wishlist
+>record all solutions
 
 ## known bugs
->Cannot navigate a non-only tresure map
->Cannot record all solutions
 >Displayer not utilized yet
