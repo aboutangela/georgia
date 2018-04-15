@@ -8,15 +8,15 @@
 
 
 public class MazeSolver {
-     //ArrayList< Maze> solutions;
-     //Maze inProgress;
-     private int[] directions = new int[]{Maze.NORTH, Maze.EAST, Maze.SOUTH, Maze.WEST};
+    private static Displayer displayer;
+    
+     private static int[] directions = new int[]{Maze.NORTH, Maze.EAST, Maze.SOUTH, Maze.WEST};
 
-    public MazeSolver( Maze maze) {
-        // this.displayer = displayer;
+    public MazeSolver( Displayer displayer) {
+         this.displayer = displayer;
     }
 
-public boolean solveMaze( Maze maze) {
+public static boolean solveMaze( Maze maze) {
   //check base cases
 
   //if on wall
