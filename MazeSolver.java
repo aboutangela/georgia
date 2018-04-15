@@ -10,49 +10,36 @@
 public class MazeSolver {
      //ArrayList< Maze> solutions;
      //Maze inProgress;
+     private int[] directions = new int[]{Maze.NORTH, Maze.EAST, Maze.SOUTH, Maze.WEST};
 
-    public MazeSolver( Maze maze) {                    
+    public MazeSolver( Maze maze) {
         // this.displayer = displayer;
     }
 
 public boolean solveMaze( Maze maze) {
-     //Explorer starts on a point
+  //check base cases
 
-     //Check base cases
+  //if on wall
     if (maze.explorerIsOnA() == maze.WALL)
-	return false;
-
-	//If on treasure, return true -- don't know how to do yet
+      return false;
+	//if on treasure
     else if( maze.explorerIsOnA() == maze.TREASURE)
-	return true;
-  
-/**
-	//Else, on stepping stone
-
+	   return true;
+  Maze snapshot = new Maze(maze);
+	//else, on stepping stone
 	//For every legal neighbor of explorer
-
-	int[] directions = new int{1,2,4.8};
-	
-
-	for(int a: directions){
-	    
+	for(int direction: directions){
 	    // Replace original stepping stone with a wall
-	    Maze backUp = new Maze(inProgress);
-
-	    inProgress.dropA(2);
-
+	    maze.dropA(maze.WALL);
 	    //Invoke recursive abstraction
 	    //When I am asked to solve a maze, given a maze, the recursive abstraction can solve a maze with one fewer stepping stones by making the next legal move.
-	    if(inProgress.go(a) == null) break;
-	    else inProgress.go(a);
-	    solveMaze;
+      maze.go(direction);
+      if( solveMaze(maze))
+        return true;
 	    //Recover original stepping stone
-
-	    backUp.dropA(2);
-	}
-*/	
+      maze = new Maze(snapshot);
+	   }       
 	return false;
-	
-    }
+	}
 
 }
