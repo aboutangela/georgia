@@ -46,7 +46,9 @@ UserOfMaze
 UserOfMazeSolver
 
 ## version*n* wishlist
->record all solutions
+>Record all solutions
 
 ## known bugs
->Displayer not utilized yet
+
+## v1
+>Utilize Displayer class
